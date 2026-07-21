@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="title">XTR Clan | تيم ماينكرافت المحترفين</title>
+
+    <!-- وسوم معاينة ديسكورد ووسائل التواصل (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xtr-clan.vercel.app/">
+    <meta property="og:title" content="XTR Clan — Kings of Survival">
+    <meta property="og:description" content="Elite Minecraft Survival Clan. أقوى تيم محترفين ماينكرافت، ولاء مطلق ومعارك أسطورية.">
+    <meta property="og:image" content="https://i.ibb.co/BH4xCrKv/image.png">
+
+    <!-- إعدادات بطاقات تويتر لضمان عرض الصورة بكامل حجمها -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XTR Clan — Kings of Survival">
+    <meta name="twitter:description" content="Elite Minecraft Survival Clan. أقوى تيم محترفين ماينكرافت، ولاء مطلق ومعارك أسطورية.">
+    <meta name="twitter:image" content="https://i.ibb.co/BH4xCrKv/image.png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- مكتبة الأنيماشن AOS CSS للفخامة -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/skinview3d@3.0.0/bundles/skinview3d.bundle.js"></script>
+</head>
+<body>
+
+    <header class="xtr-navbar" id="navbar" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="XTR Logo" class="brand-logo">
+                <span>XTR</span>
+            </a>
+        </div>
+        <nav class="xtr-nav-menu">
+            <a href="#home" class="active" data-lang="nav_home">الرئيسية</a>
+            <a href="#founders" data-lang="nav_founders">المؤسسون</a>
+            <a href="#members" data-lang="nav_members">الأعضاء</a>
+            <a href="#media" data-lang="nav_media">الوسائط</a>
+            <a href="#rules" data-lang="nav_rules">القوانين</a>
+            <a href="#" id="openServerIpModalBtn">Server IP</a>
+        </nav>
+        <div class="header-right-side">
+            <div class="lang-switcher">
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                <button class="lang-btn active-lang" onclick="changeLanguage('ar')">AR</button>
+                <button class="lang-btn" onclick="changeLanguage('zh')">ZH</button>
+                <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1200">
+            <h1 data-lang="hero_title">XTR CLAN <span style="color: #a855f7; font-size: 0.9em;">S1</span></h1>
+            <p data-lang="hero_subtitle">Elite Minecraft Survival Clan</p>
+            <div class="buttons">
+                <a href="https://discord.gg/mHtN6E7Bu" target="_blank" class="btn discord-btn">
+                    <span class="btn-icon">💬</span> <span data-lang="btn_discord">Join Discord</span>
+                </a>
+                <a href="#" class="btn apply-btn" id="openModalBtn">
+                    <span class="btn-icon">⚔️</span> <span data-lang="btn_apply">Apply To Clan</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="founders">
+        <h2 data-lang="sec_founders" data-aos="fade-down">المؤسسون</h2>
+        <div class="cards">
+            <div class="skin-card" data-aos="fade-right" data-aos-delay="100">
+                <canvas id="skin_dio"></canvas>
+                <h3>ItzDio</h3>
+                <p data-lang="role_founder">Founder</p>
+            </div>
+            <div class="skin-card" data-aos="fade-left" data-aos-delay="200">
+                <canvas id="skin_haged"></canvas>
+                <h3>_HAGED</h3>
+                <p data-lang="role_founder">Founder</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="members">
+        <h2 data-lang="sec_members" data-aos="fade-down">أعضاء التيم</h2>
+        <div class="cards">
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="100">
+                <canvas id="skin_divx"></canvas>
+                <h3>_DIVX</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="200">
+                <canvas id="skin_dbu"></canvas>
+                <h3>_D_B_U_</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="300">
+                <canvas id="skin_hommos"></canvas>
+                <h3>HOMMOS_19</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="400">
+                <canvas id="skin_elkhattam"></canvas>
+                <h3>Elkhattam</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="500">
+                <canvas id="skin_nova"></canvas>
+                <h3>Nova</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="600">
+                <canvas id="skin_msf"></canvas>
+                <h3>MSF47S</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+            <div class="skin-card" data-aos="zoom-in" data-aos-delay="700">
+                <canvas id="skin_itzmeenoww"></canvas>
+                <h3>itzmeenoww</h3>
+                <p data-lang="role_member">Member</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="media">
+        <h2 data-lang="sec_media" data-aos="fade-down">الصور والوسائط</h2>
+        <div class="gallery">
+            <img src="./HomeVider.png" alt="" data-aos="fade-up" data-aos-delay="100">
+        </div>
+    </section>
+
+    <section class="section" id="rules">
+        <h2 data-lang="sec_rules" data-aos="fade-down">قوانين التيم</h2>
+        <div class="rules-container">
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-lang="rule1_title">🛡️ 1. الاحترام</h3>
+                <ul>
+                    <li data-lang="rule1_1">ممنوع الإهانة أو التقليل من أي عضو.</li>
+                    <li data-lang="rule1_2">أي خلاف يتحل في الخاص أو مع القائد.</li>
+                    <li data-lang="rule1_3">ممنوع إثارة المشاكل داخل التيم.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 data-lang="rule2_title">⏰ 2. الالتزام</h3>
+                <ul>
+                    <li data-lang="rule2_1">أي مهمة يتم تكليفك بها حاول تخلصها في الوقت المتفق عليه.</li>
+                    <li data-lang="rule2_2">لو مش قادر تنفذ المهمة، بلغ المسؤول قبل الموعد.</li>
+                    <li data-lang="rule2_3">عدم الرد أو تجاهل المهام بشكل متكرر يعتبر تقصير.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="300">
+                <h3 data-lang="rule3_title">💎 3. الموارد</h3>
+                <ul>
+                    <li data-lang="rule3_1">موارد التيم المشتركة ملك للجميع، وممنوع أخذها للاستخدام الشخصي بدون إذن.</li>
+                    <li data-lang="rule3_2">أي موارد تجمعها للتيم تتحط في مخزن التيم.</li>
+                    <li data-lang="rule3_3">ممنوع إخفاء أو بيع موارد التيم بدون موافقة.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="400">
+                <h3 data-lang="rule4_title">⚔️ 4. القتال والحروب</h3>
+                <ul>
+                    <li data-lang="rule4_1">ممنوع بدء حرب أو مهاجمة تيم آخر بدون موافقة القائد.</li>
+                    <li data-lang="rule4_2">في حالة الهجوم علينا، كل الأعضاء المطلوبين لازم يساعدوا في الدفاع حسب قدرتهم.</li>
+                    <li data-lang="rule4_3">ممنوع ترك زميل في معركة بدون سبب واضح.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-lang="rule5_title">🔒 5. الأسرار</h3>
+                <ul>
+                    <li data-lang="rule5_1">ممنوع تسريب مكان القاعدة أو المخازن أو أي معلومات سرية خارج التيم.</li>
+                    <li data-lang="rule5_2">ممنوع مشاركة خطط التيم مع أي لاعب آخر.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 data-lang="rule6_title">🏗️ 6. الحماية والمسافة والملكية</h3>
+                <ul>
+                    <li data-lang="rule6_1">ممنوع منعاً باتاً بناء أي قواعد فرعية أو بيوت على مسافة أقل من 500 بلوكة من القاعدة الرئيسية لتجنب كشف موقع التيم أو إضعاف حمايته.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="300">
+                <h3 data-lang="rule7_title">🤝 7. التعاون والمهمات الجماعية</h3>
+                <ul>
+                    <li data-lang="rule7_1">عند الإعلان عن مشروع جماعي مثل بناء فارمات أو تطوير القاعدة، يجب على المتاحين المشاركة بقدر المستطاع لسرعة إنجازه.</li>
+                    <li data-lang="rule7_2">احترام ممتلكات وأدوات الآخرين الشخصية الموضوعة في صناديقهم الخاصة وعدم العبث بها نهائياً.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="400">
+                <h3 data-lang="rule8_title">⚡ 8. النشاط والفعالية</h3>
+                <ul>
+                    <li data-lang="rule8_1">الغياب عن اللعب لفترة طويلة (أكثر من 3 ايام) بدون إذن مسبق للقائد يعرض العضو لخطر مغادرة التيم لتفريغ مكانه.</li>
+                    <li data-lang="rule8_2">حضور الاجتماعات أو الفعاليات الكبرى للتيم إلزامي إلا في حال وجود عذر قسري.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-lang="rule9_title">🔗 9. التحالفات الخارجية</h3>
+                <ul>
+                    <li data-lang="rule9_1">ممنوع التحالف مع شخص أو تيم من غير علم القائد نهائياً.</li>
+                </ul>
+            </div>
+            <div class="rule-box" data-aos="fade-up" data-aos-delay="200">
+                <h3 data-lang="rule10_title">⚠️ 10. العقوبات</h3>
+                <ul>
+                    <li><strong data-lang="pen1_title">المخالفة الأولى:</strong> <span data-lang="pen1_desc">تنبيه.</span></li>
+                    <li><strong data-lang="pen2_title">المخالفة الثانية:</strong> <span data-lang="pen2_desc">سحب بعض الصلاحيات.</span></li>
+                    <li><strong data-lang="pen3_title">المخالفة الثالثة:</strong> <span data-lang="pen3_desc">إخراج من التيم.</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="important-rule" data-aos="zoom-in" data-aos-duration="1000">
+            <h3 data-lang="imp_title">⭐ قاعدة مهمة</h3>
+            <p data-lang="imp_p1">التيم مش مبني على الخوف، التيم مبني على الثقة والالتزام.</p>
+            <p data-lang="imp_p2">كل عضو يحترم التيم، والتيم يحترمه ويحميه.</p>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p data-lang="footer_text">© 2026 XTR Clan. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <div class="modal-overlay" id="clanModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h3 data-lang="modal_title">📋 استمارة انضمام جديدة</h3>
+            <form id="apply-form">
+                <label data-lang="form_discord">💬 يوزر ديسكورد:</label>
+                <input type="text" id="discord_username" name="discord_username" required data-lang-placeholder="ph_discord" placeholder="Your discord username...">
+
+                <label data-lang="form_realname">👤 الاسم الحقيقي:</label>
+                <input type="text" id="real_name" name="real_name" required data-lang-placeholder="ph_realname" placeholder="اكتب اسمك الحقيقي...">
+
+                <label data-lang="form_mc">🎮 اسم ماينكرافت:</label>
+                <input type="text" id="minecraft_name" name="minecraft_name" required data-lang-placeholder="ph_mc" placeholder="اسمك في اللعبة...">
+
+                <label data-lang="form_years">⛏️ سنوات اللعب:</label>
+                <input type="number" id="years_playing" name="years_playing" required data-lang-placeholder="ph_years" placeholder="كم سنة؟">
+
+                <label data-lang="form_hours">🕒 ساعات اللعب:</label>
+                <input type="number" id="hours_playing" name="hours_playing" required data-lang-placeholder="ph_hours" placeholder="كام ساعة في اليوم؟">
+
+                <label data-lang="form_age">🎂 العمر:</label>
+                <input type="number" id="age" name="age" required data-lang-placeholder="ph_age" placeholder="عمرك...">
+
+                <label data-lang="form_role">⚔️ المهمة:</label>
+                <select id="role" name="role">
+                    <option value="Fighter" data-lang="role_fighter_opt">Fighter</option>
+                    <option value="Builder" data-lang="role_builder_opt">Builder</option>
+                    <option value="PvPer" data-lang="role_pvper_opt">PvPer</option>
+                </select>
+
+                <label data-lang="form_reason">💬 سبب الانضمام:</label>
+                <textarea id="reason" name="reason" rows="3" required data-lang-placeholder="ph_reason" placeholder="اكتب سبب انضمامك..."></textarea>
+
+                <label data-lang="form_religion">☪️ الديانة:</label>
+                <input type="text" id="religion" name="religion" required data-lang-placeholder="ph_religion" placeholder="ديانتك...">
+
+                <button type="submit" class="submit-btn" data-lang="btn_submit">إرسال الطلب 🚀</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="serverIpModal">
+        <div class="modal-content server-ip-modal-content">
+            <span class="close-btn" id="closeServerIpModalBtn">&times;</span>
+            <h3 data-lang="ip_modal_title">🌐 IP Server</h3>
+            <p data-lang="ip_modal_desc">انقر على الآيبي أو زر النسخ لنسخ عنوان السيرفر والدخول فوراً!</p>
+            <div class="ip-box-container" id="copyIpBox">
+                <span id="modalIpText">vaidar.live</span>
+                <button class="copy-btn-action" id="copyIpBtn" data-lang="ip_copy_btn">نسخ الآيبي 📋</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- تفعيل مكتبة الأنيماشن AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,          // سرعة حركة ناعمة وفخمة
+        easing: 'ease-out-cubic', // انسيابية عالية جداً في الحركة
+        once: true               // تظهر مرة واحدة لكل عنصر عند النزول إليه
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
