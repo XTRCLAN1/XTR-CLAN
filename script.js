@@ -1,767 +1,564 @@
+// === دوال تغيير اللغات (AR, EN, ZH, FR) ===
 const translations = {
-    en: {
-        title: "XTR Clan | Elite Minecraft Survival",
-        nav_home: "Home",
-        nav_founders: "Founders",
-        nav_members: "Clan Members",
-        nav_media: "Media",
-        nav_rules: "Rules",
-        hero_title: "XTR CLAN",
-        hero_subtitle: "Elite Minecraft Survival Clan",
-        btn_discord: "Join Discord",
-        btn_apply: "Apply To Clan",
-        stat_online: "Online Members",
-        stat_members: "Total Visitors",
-        modal_title: "📋 New Clan Application",
-        form_realname: "👤 Real Name:",
-        ph_realname: "Type your real name...",
-        form_mc: "🎮 Minecraft Name:",
-        ph_mc: "Your in-game name...",
-        form_years: "⛏️ Years Playing:",
-        ph_years: "How many years?",
-        form_hours: "🕒 Hours Playing:",
-        ph_hours: "Hours per day?",
-        form_age: "🎂 Age:",
-        ph_age: "Your age...",
-        form_role: "⚔️ Role:",
-        role_fighter_opt: "Fighter",
-        role_builder_opt: "Builder",
-        role_pvper_opt: "PvPer",
-        form_reason: "💬 Reason to join:",
-        ph_reason: "Why do you want to join?",
-        form_religion: "☪️ Religion:",
-        ph_religion: "Your religion...",
-        form_discord: "💬 Discord Username:",
-        ph_discord: "Your discord username...",
-        btn_submit: "Submit Application 🚀",
-        sec_founders: "Founders",
-        role_founder: "Founder",
-        sec_members: "Clan Members",
-        role_member: "Member",
-        sec_media: "Media",
-        sec_rules: "Clan Rules",
-        
-        rule1_title: "🛡️ 1. Respect",
-        rule1_1: "No insulting or disrespecting any member.",
-        rule1_2: "Any conflict must be resolved privately or with the leader.",
-        rule1_3: "No causing trouble inside the team.",
-        
-        rule2_title: "⏰ 2. Commitment",
-        rule2_1: "Try to finish any assigned task on time.",
-        rule2_2: "If you cannot complete a task, inform the responsible person ahead of time.",
-        rule2_3: "Repeatedly ignoring tasks or not responding is considered slacking.",
-        
-        rule3_title: "💎 3. Resources",
-        rule3_1: "Shared team resources belong to everyone; taking them for personal use without permission is forbidden.",
-        rule3_2: "Any resources gathered for the team must be put in the team storage.",
-        rule3_3: "Hiding or selling team resources without approval is prohibited.",
-        
-        rule4_title: "⚔️ 4. Combat & Wars",
-        rule4_1: "Starting a war or attacking another team without the leader's approval is forbidden.",
-        rule4_2: "In case of an attack on us, all required members must help defend to the best of their ability.",
-        rule4_3: "Leaving a teammate behind in battle without a clear reason is prohibited.",
-        
-        rule5_title: "🔒 5. Secrets",
-        rule5_1: "Leaking the base location, storages, or any confidential information outside the team is forbidden.",
-        rule5_2: "Sharing team plans with any outsider is prohibited.",
-        
-        rule6_title: "🏗️ 6. Protection & Distance",
-        rule6_1: "Strictly forbidden to build sub-bases or houses less than 500 blocks away from the main base to avoid exposing the location or weakening defense.",
-        
-        rule7_title: "🤝 7. Cooperation & Group Tasks",
-        rule7_1: "When a group project is announced (like building farms or expanding the base), available members must participate as much as possible.",
-        rule7_2: "Respect other members' personal items and belongings in their private chests; tampering with them is strictly forbidden.",
-        
-        rule8_title: "⚡ 8. Activity",
-        rule8_1: "Being inactive or absent from playing for a long time (more than 3 days) without prior notice to the leader puts membership at risk.",
-        rule8_2: "Attending major team meetings or events is mandatory unless there is an emergency excuse.",
-        
-        rule9_title: "🔗 9. External Alliances",
-        rule9_1: "Making alliances with any person or team without the leader's knowledge is strictly forbidden.",
-        
-        rule10_title: "⚠️ 10. Penalties",
-        pen1_title: "First offense:", pen1_desc: "Warning.",
-        pen2_title: "Second offense:", pen2_desc: "Revoking some privileges.",
-        pen3_title: "Third offense:", pen3_desc: "Kicking out of the team.",
-        
-        imp_title: "⭐ Important Rule",
-        imp_p1: "The team is not built on fear; it is built on trust and commitment.",
-        imp_p2: "Every member who respects the team will be respected and protected by it.",
-        footer_text: "© 2026 XTR Clan. All Rights Reserved."
-    },
     ar: {
-        title: "XTR Clan | تيم ماينكرافت المحترفين",
+        title: "XTR | تيم المحترفين",
         nav_home: "الرئيسية",
         nav_founders: "المؤسسون",
         nav_members: "الأعضاء",
         nav_media: "الوسائط",
         nav_rules: "القوانين",
-        hero_title: "تيم XTR",
-        hero_subtitle: "التيم الأقوى في ماينكرافت سيرفايفل",
-        btn_discord: "انضم لديسكورد",
-        btn_apply: "قدم على التيم",
-        stat_online: "متصل الآن",
+        hero_title: "CLAN XTR",
+        hero_subtitle: "Elite Survival Clan",
+        btn_discord: "Join Discord",
+        btn_apply: "Apply To Clan",
         stat_members: "إجمالي الزوار",
-        modal_title: "📋 استمارة انضمام جديدة",
-        form_realname: "👤 الاسم الحقيقي:",
-        ph_realname: "اكتب اسمك الحقيقي...",
-        form_mc: "🎮 اسم ماينكرافت:",
-        ph_mc: "اسمك في اللعبة...",
-        form_years: "⛏️ سنوات اللعب:",
-        ph_years: "كم سنة؟",
-        form_hours: "🕒 ساعات اللعب:",
-        ph_hours: "كام ساعة في اليوم؟",
-        form_age: "🎂 العمر:",
-        ph_age: "عمرك...",
-        form_role: "⚔️ المهمة:",
-        role_fighter_opt: "Fighter",
-        role_builder_opt: "Builder",
-        role_pvper_opt: "PvPer",
-        form_reason: "💬 سبب الانضمام:",
-        ph_reason: "اكتب سبب انضمامك...",
-        form_religion: "☪️ الديانة:",
-        ph_religion: "ديانتك...",
-        form_discord: "💬 يوزر ديسكورد:",
-        ph_discord: "اكتب يوزر حسابك في ديسكورد...",
-        btn_submit: "إرسال الطلب 🚀",
         sec_founders: "المؤسسون",
-        role_founder: "Founder",
         sec_members: "أعضاء التيم",
         sec_media: "الصور والوسائط",
         sec_rules: "قوانين التيم",
-        
+        role_founder: "FOUNDER",
+        role_member: "MEMBER",
         rule1_title: "🛡️ 1. الاحترام",
         rule1_1: "ممنوع الإهانة أو التقليل من أي عضو.",
         rule1_2: "أي خلاف يتحل في الخاص أو مع القائد.",
         rule1_3: "ممنوع إثارة المشاكل داخل التيم.",
-        
         rule2_title: "⏰ 2. الالتزام",
         rule2_1: "أي مهمة يتم تكليفك بها حاول تخلصها في الوقت المتفق عليه.",
         rule2_2: "لو مش قادر تنفذ المهمة، بلغ المسؤول قبل الموعد.",
         rule2_3: "عدم الرد أو تجاهل المهام بشكل متكرر يعتبر تقصير.",
-        
         rule3_title: "💎 3. الموارد",
         rule3_1: "موارد التيم المشتركة ملك للجميع، وممنوع أخذها للاستخدام الشخصي بدون إذن.",
         rule3_2: "أي موارد تجمعها للتيم تتحط في مخزن التيم.",
         rule3_3: "ممنوع إخفاء أو بيع موارد التيم بدون موافقة.",
-        
         rule4_title: "⚔️ 4. القتال والحروب",
         rule4_1: "ممنوع بدء حرب أو مهاجمة تيم آخر بدون موافقة القائد.",
         rule4_2: "في حالة الهجوم علينا، كل الأعضاء المطلوبين لازم يساعدوا في الدفاع حسب قدرتهم.",
         rule4_3: "ممنوع ترك زميل في معركة بدون سبب واضح.",
-        
         rule5_title: "🔒 5. الأسرار",
         rule5_1: "ممنوع تسريب مكان القاعدة أو المخازن أو أي معلومات سرية خارج التيم.",
         rule5_2: "ممنوع مشاركة خطط التيم مع أي لاعب آخر.",
-        
         rule6_title: "🏗️ 6. الحماية والمسافة والملكية",
         rule6_1: "ممنوع منعاً باتاً بناء أي قواعد فرعية أو بيوت على مسافة أقل من 500 بلوكة من القاعدة الرئيسية لتجنب كشف موقع التيم أو إضعاف حمايته.",
-        
         rule7_title: "🤝 7. التعاون والمهمات الجماعية",
         rule7_1: "عند الإعلان عن مشروع جماعي مثل بناء فارمات أو تطوير القاعدة، يجب على المتاحين المشاركة بقدر المستطاع لسرعة إنجازه.",
         rule7_2: "احترام ممتلكات وأدوات الآخرين الشخصية الموضوعة في صناديقهم الخاصة وعدم العبث بها نهائياً.",
-        
         rule8_title: "⚡ 8. النشاط والفعالية",
         rule8_1: "الغياب عن اللعب لفترة طويلة (أكثر من 3 ايام) بدون إذن مسبق للقائد يعرض العضو لخطر مغادرة التيم لتفريغ مكانه.",
         rule8_2: "حضور الاجتماعات أو الفعاليات الكبرى للتيم إلزامي إلا في حال وجود عذر قسري.",
-        
         rule9_title: "🔗 9. التحالفات الخارجية",
         rule9_1: "ممنوع التحالف مع شخص أو تيم من غير علم القائد نهائياً.",
-        
         rule10_title: "⚠️ 10. العقوبات",
-        pen1_title: "المخالفة الأولى:", pen1_desc: "تنبيه.",
-        pen2_title: "المخالفة الثانية:", pen2_desc: "سحب بعض الصلاحيات.",
-        pen3_title: "المخالفة الثالثة:", pen3_desc: "إخراج من التيم.",
-        
+        pen1_title: "المخالفة الأولى:",
+        pen1_desc: "تنبيه.",
+        pen2_title: "المخالفة الثانية:",
+        pen2_desc: "سحب بعض الصلاحيات.",
+        pen3_title: "المخالفة الثالثة:",
+        pen3_desc: "إخراج من التيم.",
         imp_title: "⭐ قاعدة مهمة",
         imp_p1: "التيم مش مبني على الخوف، التيم مبني على الثقة والالتزام.",
         imp_p2: "كل عضو يحترم التيم، والتيم يحترمه ويحميه.",
-        footer_text: "© 2026 XTR Clan. جميع الحقوق محفوظة."
-    },
-    zh: {
-        title: "XTR 战队 | 精英我的世界生存",
-        nav_home: "首页",
-        nav_founders: "创始人",
-        nav_members: "战队成员",
-        nav_media: "媒体",
-        nav_rules: "规则",
-        hero_title: "XTR 战队",
-        hero_subtitle: "精英我的世界生存战队",
-        btn_discord: "加入 Discord",
-        btn_apply: "申请加入",
-        stat_online: "在线成员",
-        stat_members: "总访客数",
-        modal_title: "📋 新战队申请表",
-        form_realname: "👤 真实姓名:",
-        ph_realname: "输入您的真实姓名...",
-        form_mc: "🎮 游戏ID (Minecraft):",
-        ph_mc: "您的游戏内名字...",
-        form_years: "⛏️ 游戏年限:",
-        ph_years: "几年经验？",
-        form_hours: "🕒 每日在线时间:",
-        ph_hours: "每天几小时？",
-        form_age: "🎂 年龄:",
-        ph_age: "您的年龄...",
-        form_role: "⚔️ 职业/定位:",
+        footer_text: "© 2026 XTR Clan. جميع الحقوق محفوظة.",
+        modal_title: "📋 استمارة انضمام جديدة",
+        form_discord: "💬 يوزر ديسكورد:",
+        form_realname: "👤 الاسم الحقيقي:",
+        form_mc: "🎮 اسم ماينكرافت:",
+        form_years: "⛏️ سنوات اللعب:",
+        form_hours: "🕒 ساعات اللعب:",
+        form_age: "🎂 العمر:",
+        form_role: "⚔️ المهمة:",
+        form_religion: "☪️ الديانة:",
+        form_reason: "💬 سبب الانضمام:",
+        ph_discord: "Your discord username...",
+        ph_realname: "اكتب اسمك الحقيقي...",
+        ph_mc: "اسمك في اللعبة...",
+        ph_years: "كم سنة؟",
+        ph_hours: "كام ساعة في اليوم؟",
+        ph_age: "عمرك...",
+        ph_religion: "ديانتك...",
+        ph_reason: "اكتب سبب انضمامك...",
         role_fighter_opt: "Fighter",
         role_builder_opt: "Builder",
         role_pvper_opt: "PvPer",
-        form_reason: "💬 加入原因:",
-        ph_reason: "您为什么要加入？",
-        form_religion: "☪️ 信仰/宗教:",
-        ph_religion: "您的信仰...",
-        form_discord: "💬 Discord 用户名:",
-        ph_discord: "您的 Discord 用户名...",
-        btn_submit: "提交申请 🚀",
+        btn_submit: "إرسال الطلب 🚀"
+    },
+    en: {
+        title: "XTR | Elite Clan",
+        nav_home: "Home",
+        nav_founders: "Founders",
+        nav_members: "Members",
+        nav_media: "Media",
+        nav_rules: "Rules",
+        hero_title: "CLAN XTR",
+        hero_subtitle: "Elite Survival Clan",
+        btn_discord: "Join Discord",
+        btn_apply: "Apply To Clan",
+        stat_members: "Total Visitors",
+        sec_founders: "Founders",
+        sec_members: "Team Members",
+        sec_media: "Media & Gallery",
+        sec_rules: "Team Rules",
+        role_founder: "FOUNDER",
+        role_member: "MEMBER",
+        rule1_title: "🛡️ 1. Respect",
+        rule1_1: "No insults or belittling any member.",
+        rule1_2: "Any dispute must be resolved in private or with the leader.",
+        rule1_3: "Creating drama within the team is strictly forbidden.",
+        rule2_title: "⏰ 2. Commitment",
+        rule2_1: "Try to finish any assigned task within the agreed time.",
+        rule2_2: "If unable to complete a task, notify the admin beforehand.",
+        rule2_3: "Repeatedly ignoring tasks is considered negligence.",
+        rule3_title: "💎 3. Resources",
+        rule3_1: "Shared team resources belong to everyone and cannot be taken without permission.",
+        rule3_2: "Any resources gathered for the team must be put in the team storage.",
+        rule3_3: "Hiding or selling team resources without approval is forbidden.",
+        rule4_title: "⚔️ 4. Combat & Wars",
+        rule4_1: "Do not start a war or attack another team without leader approval.",
+        rule4_2: "In case of attack, all required members must help defend as much as they can.",
+        rule4_3: "Leaving a teammate in battle without a clear reason is forbidden.",
+        rule5_title: "🔒 5. Secrets",
+        rule5_1: "Do not leak the base location, storages, or any confidential info outside the team.",
+        rule5_2: "Sharing team plans with any other player is strictly forbidden.",
+        rule6_title: "🏗️ 6. Protection & Distance",
+        rule6_1: "Strictly forbidden to build sub-bases or houses closer than 500 blocks from the main base.",
+        rule7_title: "🤝 7. Teamwork",
+        rule7_1: "Participate in team projects like farms or upgrades when available.",
+        rule7_2: "Respect others' personal property and tools in their private chests.",
+        rule8_title: "⚡ 8. Activity",
+        rule8_1: "Being absent for more than 3 days without notice risks team removal.",
+        rule8_2: "Attending major meetings or team events is mandatory unless excused.",
+        rule9_title: "🔗 9. Alliances",
+        rule9_1: "No external alliances without the leader's direct knowledge.",
+        rule10_title: "⚠️ 10. Penalties",
+        pen1_title: "First offense:",
+        pen1_desc: "Warning.",
+        pen2_title: "Second offense:",
+        pen2_desc: "Revocation of privileges.",
+        pen3_title: "Third offense:",
+        pen3_desc: "Kicked from the team.",
+        imp_title: "⭐ Important Rule",
+        imp_p1: "The team is built on trust and commitment, not fear.",
+        imp_p2: "Respect the team, and the team will respect and protect you.",
+        footer_text: "© 2026 XTR Clan. All rights reserved.",
+        modal_title: "📋 New Clan Application",
+        form_discord: "💬 Discord Username:",
+        form_realname: "👤 Real Name:",
+        form_mc: "🎮 Minecraft Name:",
+        form_years: "⛏️ Years Playing:",
+        form_hours: "🕒 Hours Playing:",
+        form_age: "🎂 Age:",
+        form_role: "⚔️ Role:",
+        form_religion: "☪️ Religion:",
+        form_reason: "💬 Reason to Join:",
+        ph_discord: "Your discord username...",
+        ph_realname: "Write your real name...",
+        ph_mc: "Your in-game name...",
+        ph_years: "How many years?",
+        ph_hours: "Hours per day?",
+        ph_age: "Your age...",
+        ph_religion: "Your religion...",
+        ph_reason: "Write your reason...",
+        role_fighter_opt: "Fighter",
+        role_builder_opt: "Builder",
+        role_pvper_opt: "PvPer",
+        btn_submit: "Submit Application 🚀"
+    },
+    zh: {
+        title: "XTR | 精英战队",
+        nav_home: "首页",
+        nav_founders: "创始人",
+        nav_members: "成员",
+        nav_media: "媒体",
+        nav_rules: "规则",
+        hero_title: "CLAN XTR",
+        hero_subtitle: "精英生存战队",
+        btn_discord: "加入Discord",
+        btn_apply: "申请加入",
+        stat_members: "总访客数",
         sec_founders: "创始人",
-        role_founder: "Founder",
         sec_members: "战队成员",
-        role_member: "Member",
-        sec_media: "精彩媒体",
+        sec_media: "媒体画廊",
         sec_rules: "战队规则",
-        
+        role_founder: "创始人",
+        role_member: "成员",
         rule1_title: "🛡️ 1. 尊重",
-        rule1_1: "严禁侮辱或看不起任何成员。",
-        rule1_2: "任何冲突必须私下解决或向队长汇报。",
-        rule1_3: "严禁在战队内部挑起事端。",
-        
-        rule2_title: "⏰ 2. 承诺与责任",
-        rule2_1: "尽力在约定时间内完成指派的任务。",
-        rule2_2: "如果无法完成任务，请提前通知负责人。",
-        rule2_3: "经常无故不回复或无视任务将被视为不负责任。",
-        
-        rule3_title: "💎 3. 资源管理",
-        rule3_1: "共享战队资源属于所有人，未经允许严禁私自拿去个人使用。",
-        rule3_2: "为战队收集的任何资源必须存放在战队仓库中。",
-        rule3_3: "未经批准严禁隐藏或出售战队资源。",
-        
+        rule1_1: "严禁侮辱或看低任何成员。",
+        rule1_2: "任何纠纷必须私下解决或找队长处理。",
+        rule1_3: "严禁在队内挑起事端。",
+        rule2_title: "⏰ 2. 承诺",
+        rule2_1: "在约定时间内完成分配的任务。",
+        rule2_2: "如果无法完成，请提前通知管理员。",
+        rule2_3: "屡次忽视任务将被视为失职。",
+        rule3_title: "💎 3. 资源",
+        rule3_1: "共享资源属于所有人，未经许可不得私自拿取。",
+        rule3_2: "为战队收集的资源必须放入战队仓库。",
+        rule3_3: "严禁私藏或出售战队资源。",
         rule4_title: "⚔️ 4. 战斗与战争",
-        rule4_1: "未经队长批准，严禁挑起战争或攻击其他战队。",
-        rule4_2: "如果遭到攻击，所有相关成员必须尽最大努力协助防守。",
-        rule4_3: "无正当理由严禁在战斗中抛弃队友。",
-        
+        rule4_1: "未经队长批准，不得擅自挑起战争或攻击其他战队。",
+        rule4_2: "遭遇袭击时，所有可用成员必须尽力协助防御。",
+        rule4_3: "严禁无故在战斗中抛弃队友。",
         rule5_title: "🔒 5. 机密",
-        rule5_1: "严禁向战队外部泄露基地位置、仓库或任何机密信息。",
-        rule5_2: "严禁与任何局外人分享战队计划。",
-        
+        rule5_1: "严禁向外泄漏基地位置、仓库或任何机密信息。",
+        rule5_2: "严禁与任何其他玩家分享战队计划。",
         rule6_title: "🏗️ 6. 保护与距离",
-        rule6_1: "严禁在距离主基地 500 个方块以内建造分基地或房屋，以免暴露战队位置或削弱防御。",
-        
-        rule7_title: "🤝 7. 合作与团队任务",
-        rule7_1: "当宣布集体项目（如建造农场或扩展基地）时，有空的成员必须尽可能参与。",
-        rule7_2: "尊重其他成员放在专属箱子里的个人物品，严禁擅自拿取或破坏。",
-        
+        rule6_1: "严禁在距离主基地500方以内建造分基地或房屋。",
+        rule7_title: "🤝 7. 团队合作",
+        rule7_1: "积极参与农场建设或基地升级等集体项目。",
+        rule7_2: "尊重他人个人箱子里的财产和工具。",
         rule8_title: "⚡ 8. 活跃度",
-        rule8_1: "如果长期不活跃或长时间（超过3天）未登录且未提前通知队长，将被取消战队资格。",
-        rule8_2: "除非有不可抗拒的借口，否则必须出席战队的重要会议或大型活动。",
-        
-        rule9_title: "🔗 9. 外部同盟",
-        rule9_1: "严禁在队长不知情的情况下与任何人或战队结盟。",
-        
-        rule10_title: "⚠️ 10. 处罚规定",
-        pen1_title: "第一次违规：", pen1_desc: "警告。",
-        pen2_title: "第二次违规：", pen2_desc: "剥夺部分权限。",
-        pen3_title: "第三次违规：", pen3_desc: "踢出战队。",
-        
+        rule8_1: "无故缺席超过3天将面临被清退的风险。",
+        rule8_2: "必须参加重要会议或战队活动。",
+        rule9_title: "🔗 9. 外部联盟",
+        rule9_1: "未经队长知情，不得私自结盟。",
+        rule10_title: "⚠️ 10. 惩罚",
+        pen1_title: "初犯：",
+        pen1_desc: "警告。",
+        pen2_title: "再犯：",
+        pen2_desc: "撤销部分权限。",
+        pen3_title: "三犯：",
+        pen3_desc: "移出战队。",
         imp_title: "⭐ 重要规则",
-        imp_p1: "战队不是建立在恐惧之上，而是建立在信任与承诺之上。",
-        imp_p2: "每一个尊重战队的人，都将受到战队的尊重与保护。",
-        footer_text: "© 2026 XTR Clan. 保留所有权利."
+        imp_p1: "战队建立在信任与承诺之上，而非恐惧。",
+        imp_p2: "尊重战队，战队自会保护你。",
+        footer_text: "© 2026 XTR Clan. 保留所有权利。",
+        modal_title: "📋 战队申请表",
+        form_discord: "💬 Discord 用户名:",
+        form_realname: "👤 真实姓名:",
+        form_mc: "🎮 我的世界ID:",
+        form_years: "⛏️ 游玩年限:",
+        form_hours: "🕒 每日游戏时间:",
+        form_age: "🎂 年龄:",
+        form_role: "⚔️ 职位:",
+        form_religion: "☪️ 信仰:",
+        form_reason: "💬 申请理由:",
+        ph_discord: "您的discord用户名...",
+        ph_realname: "填写真实姓名...",
+        ph_mc: "游戏内的名字...",
+        ph_years: "几年？",
+        ph_hours: "一天几小时？",
+        ph_age: "你的年龄...",
+        ph_religion: "你的信仰...",
+        ph_reason: "写下原因...",
+        role_fighter_opt: "战士",
+        role_builder_opt: "建造师",
+        role_pvper_opt: "PvP高手",
+        btn_submit: "提交申请 🚀"
     },
     fr: {
-        title: "XTR Clan | Survie Minecraft Elite",
+        title: "XTR | Clan d'Élite",
         nav_home: "Accueil",
         nav_founders: "Fondateurs",
         nav_members: "Membres",
         nav_media: "Médias",
         nav_rules: "Règles",
-        hero_title: "XTR CLAN",
-        hero_subtitle: "Clan Minecraft Survie Elite",
+        hero_title: "CLAN XTR",
+        hero_subtitle: "Elite Survival Clan",
         btn_discord: "Rejoindre Discord",
-        btn_apply: "Postuler au Clan",
-        stat_online: "Membres en ligne",
-        stat_members: "Visiteurs Totaux",
-        modal_title: "📋 Nouvelle Candidature",
-        form_realname: "👤 Nom Réel :",
-        ph_realname: "Entrez votre nom réel...",
-        form_mc: "🎮 Pseudo Minecraft :",
-        ph_mc: "Votre pseudo en jeu...",
-        form_years: "⛏️ Années de Jeu :",
-        ph_years: "Combien d'années ?",
-        form_hours: "🕒 Heures de Jeu :",
-        ph_hours: "Heures par jour ?",
-        form_age: "🎂 Âge :",
-        ph_age: "Votre âge...",
-        form_role: "⚔️ Rôle :",
-        role_fighter_opt: "Combattant",
-        role_builder_opt: "Constructeur",
-        role_pvper_opt: "PvPer",
-        form_reason: "💬 Raison de rejoindre :",
-        ph_reason: "Pourquoi voulez-vous nous rejoindre ?",
-        form_religion: "☪️ Religion :",
-        ph_religion: "Votre religion...",
-        form_discord: "💬 Nom d'utilisateur Discord :",
-        ph_discord: "Votre pseudo Discord...",
-        btn_submit: "Envoyer la Candidature 🚀",
+        btn_apply: "Rejoindre le Clan",
+        stat_members: "Visiteurs totaux",
         sec_founders: "Fondateurs",
-        role_founder: "Fondateur",
-        sec_members: "Membres du Clan",
-        role_member: "Membre",
-        sec_media: "Médias",
+        sec_members: "Membres de l'équipe",
+        sec_media: "Médias et Galerie",
         sec_rules: "Règles du Clan",
-        footer_text: "© 2026 XTR Clan. Tous droits réservés."
+        role_founder: "FONDATEUR",
+        role_member: "MEMBRE",
+        rule1_title: "🛡️ 1. Respect",
+        rule1_1: "Aucune insulte ou rabaissement d'un membre.",
+        rule1_2: "Tout litige doit être réglé en privé ou avec le chef.",
+        rule1_3: "Créer des histoires au sein de l'équipe est interdit.",
+        rule2_title: "⏰ 2. Engagement",
+        rule2_1: "Terminez les tâches assignées à temps.",
+        rule2_2: "Si vous ne pouvez pas, prévenez l'admin à l'avance.",
+        rule2_3: "Ignorer les tâches de façon répétée est inacceptable.",
+        rule3_title: "💎 3. Ressources",
+        rule3_1: "Les ressources partagées appartiennent à tous.",
+        rule3_2: "Mettez les ressources récoltées dans le coffre du clan.",
+        rule3_3: "Interdit de cacher ou vendre des ressources sans accord.",
+        rule4_title: "⚔️ 4. Guerres",
+        rule4_1: "Ne commencez pas de guerre sans l'accord du chef.",
+        rule4_2: "En cas d'attaque, aidez à la défense.",
+        rule4_3: "Ne laissez pas un coéquipier seul au combat.",
+        rule5_title: "🔒 5. Secrets",
+        rule5_1: "Ne divulguez pas l'emplacement de la base.",
+        rule5_2: "Ne partagez pas les plans du clan.",
+        rule6_title: "🏗️ 6. Protection",
+        rule6_1: "Interdit de construire à moins de 500 blocs de la base principale.",
+        rule7_title: "🤝 7. Travail d'équipe",
+        rule7_1: "Participez aux projets collectifs.",
+        rule7_2: "Respectez les biens personnels des autres.",
+        rule8_title: "⚡ 8. Activité",
+        rule8_1: "Absence de plus de 3 jours sans prévenir = risque d'exclusion.",
+        rule8_2: "Présence obligatoire aux réunions majeures.",
+        rule9_title: "🔗 9. Alliances",
+        rule9_1: "Pas d'alliance externe sans l'avis du chef.",
+        rule10_title: "⚠️ 10. Sanctions",
+        pen1_title: "1ère infraction :",
+        pen1_desc: "Avertissement.",
+        pen2_title: "2ème infraction :",
+        pen2_desc: "Retrait de privilèges.",
+        pen3_title: "3ème infraction :",
+        pen3_desc: "Expulsion du clan.",
+        imp_title: "⭐ Règle Importante",
+        imp_p1: "Le clan est basé sur la confiance, pas sur la peur.",
+        imp_p2: "Respecte le clan, et il te protégera.",
+        footer_text: "© 2026 XTR Clan. Tous droits réservés.",
+        modal_title: "📋 Nouvelle Candidature",
+        form_discord: "💬 Pseudo Discord:",
+        form_realname: "👤 Vrai Nom:",
+        form_mc: "🎮 Nom Minecraft:",
+        form_years: "⛏️ Années de jeu:",
+        form_hours: "🕒 Heures par jour:",
+        form_age: "🎂 Âge:",
+        form_role: "⚔️ Rôle:",
+        form_religion: "☪️ Religion:",
+        form_reason: "💬 Raison:",
+        ph_discord: "Votre pseudo discord...",
+        ph_realname: "Écrivez votre vrai nom...",
+        ph_mc: "Votre pseudo en jeu...",
+        ph_years: "Combien d'années ?",
+        ph_hours: "Combien d'heures ?",
+        ph_age: "Votre âge...",
+        ph_religion: "Votre religion...",
+        ph_reason: "Pourquoi nous rejoindre ?",
+        role_fighter_opt: "Fighter",
+        role_builder_opt: "Builder",
+        role_pvper_opt: "PvPer",
+        btn_submit: "Envoyer la candidature 🚀"
     }
 };
 
 function changeLanguage(lang) {
-    const htmlRoot = document.getElementById("htmlRoot");
-    if (!htmlRoot) return;
-    
+    const root = document.getElementById('htmlRoot');
+    root.setAttribute('lang', lang);
     if (lang === 'ar') {
-        htmlRoot.setAttribute("dir", "rtl");
-        htmlRoot.setAttribute("lang", "ar");
+        root.setAttribute('dir', 'rtl');
     } else {
-        htmlRoot.setAttribute("dir", "ltr");
-        htmlRoot.setAttribute("lang", lang);
+        root.setAttribute('dir', 'ltr');
     }
 
-    document.querySelectorAll("[data-lang]").forEach(element => {
-        const key = element.getAttribute("data-lang");
+    // تحديث أزرار اللغة وتفعيل الزر الحالي
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active-lang');
+    });
+    if (event && event.target) {
+        event.target.classList.add('active-lang');
+    }
+
+    // تطبيق الترجمات على العناصر التي تحمل data-lang
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-lang');
         if (translations[lang] && translations[lang][key]) {
-            element.innerHTML = translations[lang][key];
+            el.innerText = translations[lang][key];
         }
     });
 
-    document.querySelectorAll("[data-lang-placeholder]").forEach(element => {
-        const key = element.getAttribute("data-lang-placeholder");
+    // تطبيق الترجمات على الـ placeholders
+    const placeholders = document.querySelectorAll('[data-lang-placeholder]');
+    placeholders.forEach(el => {
+        const key = el.getAttribute('data-lang-placeholder');
         if (translations[lang] && translations[lang][key]) {
-            element.placeholder = translations[lang][key];
+            el.setAttribute('placeholder', translations[lang][key]);
         }
     });
-
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-        btn.classList.remove("active-lang");
-        const onclickAttr = btn.getAttribute("onclick");
-        if (onclickAttr && onclickAttr.includes(`'${lang}'`)) {
-            btn.classList.add("active-lang");
-        }
-    });
-
-    updateApplyButtonState();
 }
 
-function updateApplyButtonState() {
-    const openModalBtn = document.getElementById('openModalBtn');
-    if (openModalBtn && localStorage.getItem("xtr_global_applied")) {
-        openModalBtn.innerHTML = '<span class="btn-icon">✅</span> <span>لقد قدمت مسبقاً</span>';
-        openModalBtn.style.opacity = "0.7";
-        openModalBtn.style.borderColor = "#22c55e";
-    }
-}
-
-function showCustomAlert(message) {
-    let alertModal = document.getElementById('customAlertModal');
-    
-    if (!alertModal) {
-        alertModal = document.createElement('div');
-        alertModal.id = 'customAlertModal';
-        alertModal.className = 'custom-alert-overlay';
-        alertModal.innerHTML = `
-            <div class="custom-alert-box">
-                <div class="alert-icon">✨</div>
-                <h3>تنبيه XTR</h3>
-                <p id="customAlertText"></p>
-                <button id="closeAlertBtn" class="alert-btn">حسناً</button>
-            </div>
-        `;
-        document.body.appendChild(alertModal);
-
-        const styleTag = document.createElement('style');
-        styleTag.innerHTML = `
-            .custom-alert-overlay {
-                position: fixed;
-                top: 0; left: 0; width: 100%; height: 100%;
-                background: rgba(0, 0, 0, 0.8);
-                backdrop-filter: blur(5px);
-                display: flex; justify-content: center; align-items: center;
-                z-index: 99999;
-            }
-            .custom-alert-box {
-                background: #0f0f19;
-                border: 2px solid #a855f7;
-                box-shadow: 0 0 30px rgba(168, 85, 247, 0.4);
-                padding: 30px; border-radius: 15px;
-                text-align: center; max-width: 400px; width: 90%; color: #fff;
-                animation: alertPop 0.3s ease;
-            }
-            @keyframes alertPop {
-                0% { transform: scale(0.8); opacity: 0; }
-                100% { transform: scale(1); opacity: 1; }
-            }
-            .custom-alert-box .alert-icon { font-size: 35px; margin-bottom: 10px; }
-            .custom-alert-box h3 { margin-bottom: 10px; color: #a855f7; font-size: 22px; }
-            .custom-alert-box p { color: #cbd5e1; margin-bottom: 20px; font-size: 15px; line-height: 1.5; }
-            .alert-btn {
-                background: linear-gradient(135deg, #9333ea, #a855f7);
-                color: white; border: none; padding: 10px 25px;
-                border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px;
-                transition: 0.3s;
-            }
-            .alert-btn:hover {
-                background: linear-gradient(135deg, #a855f7, #c084fc);
-                box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
-            }
-        `;
-        document.head.appendChild(styleTag);
+// === إعدادات سكنات ماينكرافت المتحركة (SkinView3D) ===
+window.addEventListener('DOMContentLoaded', () => {
+    // 1. سكن المؤسس HAGED_
+    if (document.getElementById('skin_haged')) {
+        let skinViewerHaged = new skinview3d.SkinViewer({
+            canvas: document.getElementById('skin_haged'),
+            width: 180,
+            height: 280,
+            skin: "https://minraf.com/skins/HAGED_"
+        });
+        skinViewerHaged.animation = new skinview3d.WalkingAnimation();
+        skinViewerHaged.animation.speed = 0.8;
+        skinViewerHaged.autoRotate = true;
+        skinViewerHaged.autoRotateSpeed = 0.5;
     }
 
-    document.getElementById('customAlertText').innerText = message;
-    alertModal.style.display = 'flex';
-
-    document.getElementById('closeAlertBtn').onclick = function() {
-        alertModal.style.display = 'none';
-    };
-
-    alertModal.onclick = function(e) {
-        if (e.target === alertModal) {
-            alertModal.style.display = 'none';
-        }
-    };
-}
-
-function fetchDiscordStats() {
-    const serverID = "1519630505165721730"; 
-    const onlineEl = document.getElementById("onlineMembers");
-    const totalEl = document.getElementById("totalMembers");
-
-    if (!onlineEl || !totalEl) return;
-
-    let visitorsCount = localStorage.getItem("xtr_visitors_count");
-    if (!visitorsCount) {
-        visitorsCount = 1420;
-    } else {
-        visitorsCount = parseInt(visitorsCount);
+    // 2. سكن عضو _D_B_U_
+    if (document.getElementById('skin_dbu')) {
+        let skinViewerDbu = new skinview3d.SkinViewer({
+            canvas: document.getElementById('skin_dbu'),
+            width: 160,
+            height: 250,
+            skin: "https://minraf.com/skins/_D_B_U_"
+        });
+        skinViewerDbu.animation = new skinview3d.WalkingAnimation();
+        skinViewerDbu.animation.speed = 0.8;
+        skinViewerDbu.autoRotate = true;
+        skinViewerDbu.autoRotateSpeed = 0.5;
     }
 
-    if (!sessionStorage.getItem("xtr_visited_session")) {
-        visitorsCount += 1;
-        localStorage.setItem("xtr_visitors_count", visitorsCount);
-        sessionStorage.setItem("xtr_visited_session", "true");
+    // 3. سكن عضو khyrox1
+    if (document.getElementById('skin_khyrox1')) {
+        let skinViewerKhyrox = new skinview3d.SkinViewer({
+            canvas: document.getElementById('skin_khyrox1'),
+            width: 160,
+            height: 250,
+            skin: "https://minraf.com/skins/khyrox1"
+        });
+        skinViewerKhyrox.animation = new skinview3d.WalkingAnimation();
+        skinViewerKhyrox.animation.speed = 0.8;
+        skinViewerKhyrox.autoRotate = true;
+        skinViewerKhyrox.autoRotateSpeed = 0.5;
     }
 
-    totalEl.innerText = visitorsCount;
-
-    fetch(`https://discord.com/api/guilds/${serverID}/widget.json`)
-        .then(response => {
-            if (!response.ok) throw new Error("Network error");
-            return response.json();
-        })
-        .then(data => {
-            if (data.presence_count !== undefined) {
-                onlineEl.innerText = data.presence_count;
-            }
-        })
-        .catch(error => {
-            fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(`https://discord.com/api/guilds/${serverID}/widget.json`)}`)
-                .then(res => res.json())
-                .then(proxyData => {
-                    if (proxyData && proxyData.contents) {
-                        const data = JSON.parse(proxyData.contents);
-                        if (data.presence_count !== undefined) {
-                            onlineEl.innerText = data.presence_count;
-                        }
-                    }
-                })
-                .catch(err => {
-                    console.error("Could not fetch discord stats:", err);
-                });
+    // 4. سكن عضو JULIAN
+    if (document.getElementById('skin_julian')) {
+        let skinViewerJulian = new skinview3d.SkinViewer({
+            canvas: document.getElementById('skin_julian'),
+            width: 160,
+            height: 250,
+            skin: "https://minraf.com/skins/JULIAN"
         });
-}
-
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const clanModal = document.getElementById('clanModal');
-
-if(openModalBtn && clanModal) {
-    openModalBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        
-        if (localStorage.getItem("xtr_global_applied")) {
-            showCustomAlert('⚠️ عذراً يا بطل، لقد قمت بتقديم طلب انضمام مسبقاً من هذا المتصفح ولا يمكنك التكرار!');
-            return;
-        }
-
-        clanModal.style.display = 'flex';
-    });
-}
-
-if(closeModalBtn && clanModal) {
-    closeModalBtn.addEventListener('click', () => {
-        clanModal.style.display = 'none';
-    });
-}
-
-if(clanModal) {
-    window.addEventListener('click', (e) => {
-        if (e.target === clanModal) {
-            clanModal.style.display = 'none';
-        }
-    });
-}
-
-const openServerIpModalBtn = document.getElementById('openServerIpModalBtn');
-const serverIpModal = document.getElementById('serverIpModal');
-const closeServerIpModalBtn = document.getElementById('closeServerIpModalBtn');
-const copyIpBox = document.getElementById('copyIpBox');
-const modalIpText = document.getElementById('modalIpText');
-const copyIpBtn = document.getElementById('copyIpBtn');
-
-if (openServerIpModalBtn && serverIpModal) {
-    openServerIpModalBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        serverIpModal.style.display = 'flex';
-    });
-}
-
-if (closeServerIpModalBtn && serverIpModal) {
-    closeServerIpModalBtn.addEventListener('click', () => {
-        serverIpModal.style.display = 'none';
-    });
-}
-
-if (serverIpModal) {
-    serverIpModal.addEventListener('click', (e) => {
-        if (e.target === serverIpModal) {
-            serverIpModal.style.display = 'none';
-        }
-    });
-}
-
-if (copyIpBox && modalIpText && copyIpBtn) {
-    const copyIpToClipboard = () => {
-        const ipText = modalIpText.innerText;
-        navigator.clipboard.writeText(ipText).then(() => {
-            copyIpBtn.innerText = 'تم النسخ! ✅';
-            setTimeout(() => {
-                copyIpBtn.innerText = 'نسخ الآيبي 📋';
-            }, 2000);
-        });
-    };
-    copyIpBox.addEventListener('click', copyIpToClipboard);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    updateApplyButtonState();
-    fetchDiscordStats();
-    setInterval(fetchDiscordStats, 300000);
-
-    let mediaModal = document.getElementById('mediaModal');
-    if (!mediaModal) {
-        mediaModal = document.createElement('div');
-        mediaModal.id = 'mediaModal';
-        mediaModal.innerHTML = `
-            <span id="closeMediaModal">&times;</span>
-            <img id="mediaModalImg" src="" alt="Expanded View" style="display:none;">
-            <div id="modalSkinContainer"></div>
-        `;
-        document.body.appendChild(mediaModal);
+        skinViewerJulian.animation = new skinview3d.WalkingAnimation();
+        skinViewerJulian.animation.speed = 0.8;
+        skinViewerJulian.autoRotate = true;
+        skinViewerJulian.autoRotateSpeed = 0.5;
     }
-
-    const mediaModalImg = document.getElementById('mediaModalImg');
-    const modalSkinContainer = document.getElementById('modalSkinContainer');
-    const closeMediaModal = document.getElementById('closeMediaModal');
-    
-    const galleryImages = document.querySelectorAll('.gallery img');
-    const skinCards = document.querySelectorAll('.skin-card');
-    const ruleBoxes = document.querySelectorAll('.rule-box');
-
-    let activeModalSkinViewer = null;
-
-    // تم إضافة JULIAN هنا لتظهر في النافذة المنبثقة عند الضغط عليها
-    const skinSources = {
-        'skin_haged': './haged.png',
-        'skin_dbu': './dbu.png',
-        'skin_itzmeenoww': './itzmeenoww.png',
-        'skin_khyrox1': './khyrox1.png',
-        'skin_julian': './JULIAN.png'
-    };
-
-    galleryImages.forEach(img => {
-        img.addEventListener('click', () => {
-            modalSkinContainer.style.display = 'none';
-            mediaModalImg.style.display = 'block';
-            mediaModalImg.src = img.src;
-            mediaModal.style.display = 'flex';
-        });
-    });
-
-    ruleBoxes.forEach(box => {
-        box.addEventListener('click', () => {
-            modalSkinContainer.style.display = 'none';
-            mediaModalImg.style.display = 'none';
-            
-            let existingBoxView = document.getElementById('modalRuleContent');
-            if(existingBoxView) existingBoxView.remove();
-
-            let ruleCloneView = document.createElement('div');
-            ruleCloneView.id = 'modalRuleContent';
-            ruleCloneView.className = 'rule-box';
-            ruleCloneView.style.cssText = "width: 90%; max-width: 550px; background: #0f0f19; border: 2px solid #a855f7; box-shadow: 0 0 40px rgba(168,85,247,0.5); max-height: 80vh; overflow-y: auto; cursor: default;";
-            ruleCloneView.innerHTML = box.innerHTML;
-            
-            mediaModal.appendChild(ruleCloneView);
-            mediaModal.style.display = 'flex';
-        });
-    });
-
-    skinCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const canvas = card.querySelector('canvas');
-            if (canvas && skinSources[canvas.id]) {
-                mediaModalImg.style.display = 'none';
-                let existingBoxView = document.getElementById('modalRuleContent');
-                if(existingBoxView) existingBoxView.remove();
-
-                modalSkinContainer.style.display = 'flex';
-                mediaModal.style.display = 'flex';
-
-                modalSkinContainer.innerHTML = '';
-                
-                let popupCanvas = document.createElement('canvas');
-                popupCanvas.id = 'popup_skin_canvas';
-                modalSkinContainer.appendChild(popupCanvas);
-
-                if (typeof skinview3d !== 'undefined') {
-                    activeModalSkinViewer = new skinview3d.SkinViewer({
-                        canvas: popupCanvas,
-                        width: 280,
-                        height: 400,
-                        skin: skinSources[canvas.id]
-                    });
-                    activeModalSkinViewer.controls.enableRotate = true;
-                    activeModalSkinViewer.controls.enableZoom = true;
-                    activeModalSkinViewer.animation = new skinview3d.WalkingAnimation();
-                    activeModalSkinViewer.animation.speed = 0.6;
-                }
-            }
-        });
-    });
-
-    if (closeMediaModal) {
-        closeMediaModal.addEventListener('click', () => {
-            mediaModal.style.display = 'none';
-            if(activeModalSkinViewer) {
-                activeModalSkinViewer.dispose();
-                activeModalSkinViewer = null;
-            }
-            let existingBoxView = document.getElementById('modalRuleContent');
-            if(existingBoxView) existingBoxView.remove();
-        });
-    }
-
-    mediaModal.addEventListener('click', (e) => {
-        if (e.target === mediaModal) {
-            mediaModal.style.display = 'none';
-            if(activeModalSkinViewer) {
-                activeModalSkinViewer.dispose();
-                activeModalSkinViewer = null;
-            }
-            let existingBoxView = document.getElementById('modalRuleContent');
-            if(existingBoxView) existingBoxView.remove();
-        }
-    });
 });
 
-const webhookURL = "https://discord.com/api/webhooks/1528823810076446875/ielk1iPvWn6PLnGIV6Kcbmn-V8bk4eeb-z65uzNXFDlRG6reLWku2m8QgdOByDyyzrOd";
+// === النوافذ المنسدلة (Modals) ونظام الـ Form والنسخ ===
+document.addEventListener("DOMContentLoaded", () => {
+    // نافذة استمارة التقديم
+    const modal = document.getElementById("clanModal");
+    const openBtn = document.getElementById("openModalBtn");
+    const closeBtn = document.getElementById("closeModalBtn");
 
-const formElement = document.querySelector(".modal-content form");
-if(formElement) {
-    formElement.addEventListener("submit", function(e) {
-        e.preventDefault();
-        
-        if (localStorage.getItem("xtr_global_applied")) {
-            showCustomAlert('⚠️ عذراً، لقد قمت بتقديم طلب انضمام مسبقاً من هذا الجهاز!');
-            if(clanModal) clanModal.style.display = 'none';
-            return;
-        }
-
-        const formData = new FormData(this);
-        
-        const discordMessage = {
-            embeds: [{
-                author: {
-                    name: "⚔️ XTR Clan • Elite Application",
-                    icon_url: "https://i.imgur.com/4M34hi2.png"
-                },
-                title: "📋 New Member Application Received!",
-                description: "تم استلام طلب انضمام جديد إلى السيرفر، تفاصيل اللاعب مسجلة بالأسفل:",
-                color: 9650346,
-                fields: [
-                    { name: "👤 يوزر ديسكورد", value: formData.get('discord_username') || "غير متوفر", inline: false },
-                    { name: "👤 الاسم الحقيقي", value: formData.get('real_name') || "غير متوفر", inline: false },
-                    { name: "🎮 اسم ماينكرافت", value: formData.get('minecraft_name') || "غير متوفر", inline: false },
-                    { name: "🎂 العمر", value: String(formData.get('age') || "0"), inline: false },
-                    { name: "⛏️ سنوات اللعب", value: String(formData.get('years_playing') || "0"), inline: false },
-                    { name: "🕒 ساعات اللعب", value: String(formData.get('hours_playing') || "0"), inline: false },
-                    { name: "⚔️ المهمة", value: formData.get('role') || "Fighter", inline: false },
-                    { name: "☪️ الديانة", value: formData.get('religion') || "غير متوفر", inline: false },
-                    { name: "💬 سبب الانضمام", value: formData.get('reason') || "لا يوجد", inline: false }
-                ],
-                footer: {
-                    text: "XTR Clan System • Elite Minecraft Survival",
-                    icon_url: "https://i.imgur.com/4M34hi2.png"
-                },
-                timestamp: new Date().toISOString()
-            }]
-        };
-
-        fetch(webhookURL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(discordMessage)
-        }).then(response => {
-            if(response.ok) {
-                localStorage.setItem("xtr_global_applied", "true");
-                updateApplyButtonState();
-
-                showCustomAlert('✅ تم إرسال طلبك بنجاح إلى روم الديسكورد!');
-                if(clanModal) clanModal.style.display = 'none';
-                this.reset();
-            } else {
-                showCustomAlert('❌ حدث خطأ أثناء الإرسال، تأكد من البيانات.');
-            }
-        }).catch(error => {
-            console.error('Error:', error);
-            showCustomAlert('❌ حدث خطأ في الاتصال بالإنترنت.');
+    if (openBtn && modal) {
+        openBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            modal.style.display = "flex";
         });
-    });
-}
+    }
 
-window.addEventListener("DOMContentLoaded", () => {
-    if (typeof skinview3d === 'undefined') return;
+    if (closeBtn && modal) {
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
 
-    // تم إضافة سكن JULIAN إلى مصفوفة العرض الرئيسية
-    const skins = [
-        { id: "skin_haged", path: "./haged.png" },
-        { id: "skin_dbu", path: "./dbu.png" },
-        { id: "skin_itzmeenoww", path: "./itzmeenoww.png" },
-        { id: "skin_khyrox1", path: "./khyrox1.png" },
-        { id: "skin_julian", path: "./JULIAN.png" }
-    ];
-
-    skins.forEach(skinObj => {
-        const canvasElement = document.getElementById(skinObj.id);
-        if (canvasElement) {
-            let viewer = new skinview3d.SkinViewer({
-                canvas: canvasElement,
-                width: 200,
-                height: 280,
-                skin: skinObj.path
-            });
-            viewer.controls.enableRotate = true;
-            viewer.controls.enableZoom = false;
-            viewer.animation = new skinview3d.WalkingAnimation();
-            viewer.animation.speed = 0.6;
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+        if (e.target === serverIpModal) {
+            serverIpModal.style.display = "none";
         }
     });
+
+    // نافذة آيبي السيرفر
+    const serverIpModal = document.getElementById("serverIpModal");
+    const openServerIpModalBtn = document.getElementById("openServerIpModalBtn");
+    const closeServerIpModalBtn = document.getElementById("closeServerIpModalBtn");
+
+    if (openServerIpModalBtn && serverIpModal) {
+        openServerIpModalBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            serverIpModal.style.display = "flex";
+        });
+    }
+
+    if (closeServerIpModalBtn && serverIpModal) {
+        closeServerIpModalBtn.addEventListener("click", () => {
+            serverIpModal.style.display = "none";
+        });
+    }
+
+    // زر نسخ الآيبي داخل المودال
+    const copyIpBtn = document.getElementById("copyIpBtn");
+    const modalIpText = document.getElementById("modalIpText");
+
+    if (copyIpBtn && modalIpText) {
+        copyIpBtn.addEventListener("click", () => {
+            const ip = modalIpText.innerText;
+            navigator.clipboard.writeText(ip).then(() => {
+                copyIpBtn.innerText = "تم النسخ! ✅";
+                setTimeout(() => {
+                    copyIpBtn.innerText = "نسخ الآيبي 📋";
+                }, 2000);
+            });
+        });
+    }
+
+    // إرسال استمارة التقديم عبر Webhook الديسكورد
+    const applyForm = document.getElementById("apply-form");
+    if (applyForm) {
+        applyForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            
+            const discordUser = document.getElementById("discord_username").value;
+            const realName = document.getElementById("real_name").value;
+            const mcName = document.getElementById("minecraft_name").value;
+            const years = document.getElementById("years_playing").value;
+            const hours = document.getElementById("hours_playing").value;
+            const age = document.getElementById("age").value;
+            const role = document.getElementById("role").value;
+            const religion = document.getElementById("religion").value;
+            const reason = document.getElementById("reason").value;
+
+            const webhookURL = "YOUR_DISCORD_WEBHOOK_URL_HERE"; // ضع رابط الـ Webhook هنا
+
+            const payload = {
+                embeds: [{
+                    title: "⚔️ طلب انضمام جديد لتيم XTR",
+                    color: 11010047,
+                    fields: [
+                        { name: "💬 يوزر ديسكورد", value: discordUser, inline: true },
+                        { name: "👤 الاسم الحقيقي", value: realName, inline: true },
+                        { name: "🎮 اسم ماينكرافت", value: mcName, inline: true },
+                        { name: "⛏️ سنوات اللعب", value: years, inline: true },
+                        { name: "🕒 ساعات اللعب", value: hours, inline: true },
+                        { name: "🎂 العمر", value: age, inline: true },
+                        { name: "⚔️ المهمة المطلوبة", value: role, inline: true },
+                        { name: "☪️ الديانة", value: religion, inline: true },
+                        { name: "💬 سبب الانضمام", value: reason, inline: false }
+                    ],
+                    timestamp: new Date().toISOString()
+                }]
+            };
+
+            fetch(webhookURL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            }).then(() => {
+                alert("تم إرسال طلبك بنجاح يا بطل! بالتوفيق.");
+                modal.style.display = "none";
+                applyForm.reset();
+            }).catch(err => {
+                console.error(err);
+                alert("حدث خطأ أثناء الإرسال، حاول مرة أخرى.");
+            });
+        });
+    }
+
+    // === كود عداد الزوار المحدث والمستقر (Abacus) ===
+    const counterElement = document.getElementById("totalMembers");
+
+    if (counterElement) {
+        fetch('https://abacus.jasoncameron.dev/hit/xtr_clan_visits_2026/visits')
+            .then(response => response.json())
+            .then(data => {
+                let target = data.value;
+                let current = 0;
+                const increment = Math.max(1, Math.ceil(target / 50)); 
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counterElement.innerText = target;
+                        clearInterval(timer);
+                    } else {
+                        counterElement.innerText = current;
+                    }
+                }, 25);
+            })
+            .catch(error => {
+                console.error("خطأ في جلب العداد:", error);
+                counterElement.innerText = "1420";
+            });
+    }
 });
