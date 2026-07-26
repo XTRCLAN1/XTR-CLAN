@@ -164,8 +164,8 @@
             <div data-aos="fade-up" data-aos-delay="200">
                 <div class="xtr-visitor-badge">
                     <i class="fa-solid fa-eye visitor-icon"></i>
-                    <span class="visitor-text" data-lang="stat_visitors">إجمالي الزوار</span>
-                    <span class="visitor-number" id="totalVisitors">10000</span>
+                    <span class="visitor-text" data-lang="stat_members">إجمالي الزوار</span>
+                    <span class="visitor-number" id="totalMembers">1420</span>
                 </div>
             </div>
 
@@ -215,7 +215,7 @@
                 <div class="role-badge founder-badge">
                     HIGH MANAGER
                 </div>
-                <div class="role-badge founder-badge" style="margin-top: 8px;">
+                <div class="role-badge founder-badge" style="margin-top: 8px;" data-lang="role_member">
                     MEMBER
                 </div>
             </div>
@@ -229,12 +229,12 @@
                     <canvas id="skin_khyrox1"></canvas>
                 </div>
                 <h3>khyrox1</h3>
-                <div class="role-badge founder-badge">
+                <div class="role-badge founder-badge" data-lang="role_member">
                     MEMBER
                 </div>
             </div>
 
-            <!-- كارت عضو 3: J_U_L_I_A_N -->
+            <!-- كارت عضو 3: J_U_L_I_A_N (مع سكن JULIAN المحدث) -->
             <div class="skin-card" data-aos="zoom-in" data-aos-delay="700">
                 <div class="fire-badge-top">
                     <i class="fa-solid fa-fire"></i>
@@ -242,11 +242,11 @@
                 <div class="skin-wrapper">
                     <canvas id="skin_julian"></canvas>
                 </div>
-                <h3>J_U_L_I_A_N</h3>
+                <h3>JULIAN</h3>
                 <div class="role-badge founder-badge">
                     Development Team
                 </div>
-                <div class="role-badge founder-badge" style="margin-top: 8px;">
+                <div class="role-badge founder-badge" style="margin-top: 8px;" data-lang="role_member">
                     MEMBER
                 </div>
             </div>
@@ -380,7 +380,6 @@
                     <option value="PvPer" data-lang="role_pvper_opt">PvPer</option>
                 </select>
 
-                <!-- تمت إضافة خانة الديانة هنا لتتوافق مع إرسال الديسكورد وتعمل بشكل كامل -->
                 <label data-lang="form_religion">☪️ الديانة:</label>
                 <input type="text" id="religion" name="religion" required data-lang-placeholder="ph_religion" placeholder="ديانتك...">
 
@@ -396,11 +395,11 @@
     <div class="modal-overlay" id="serverIpModal">
         <div class="modal-content server-ip-modal-content">
             <span class="close-btn" id="closeServerIpModalBtn">&times;</span>
-            <h3 data-lang="ip_modal_title">🌐 IP Server</h3>
-            <p data-lang="ip_modal_desc">انقر على الآيبي أو زر النسخ لنسخ عنوان السيرفر والدخول فوراً!</p>
+            <h3>🌐 IP Server</h3>
+            <p>انقر على الآيبي أو زر النسخ لنسخ عنوان السيرفر والدخول فوراً!</p>
             <div class="ip-box-container" id="copyIpBox">
-                <span id="modalIpTest">xtr.live</span>
-                <button class="copy-btn-action" id="copyIpBtn" data-lang="ip_copy_btn">نسخ الآيبي 📋</button>
+                <span id="modalIpText">xtr.live</span>
+                <button class="copy-btn-action" id="copyIpBtn">نسخ الآيبي 📋</button>
             </div>
         </div>
     </div>
@@ -412,21 +411,6 @@
         duration: 1200,        
         easing: 'ease-out-cubic',
         once: true            
-      });
-
-      // كود زيادة عداد الزوار ليبدأ من 10000 ويزداد مع كل تحديث أو زيارة للموقع
-      window.addEventListener('DOMContentLoaded', () => {
-          let visitors = localStorage.getItem('xtr_total_visitors');
-          if (!visitors) {
-              visitors = 10000;
-          } else {
-              visitors = parseInt(visitors) + 1;
-          }
-          localStorage.setItem('xtr_total_visitors', visitors);
-          const visitorElement = document.getElementById('totalVisitors');
-          if (visitorElement) {
-              visitorElement.innerText = visitors;
-          }
       });
     </script>
     <script src="script.js"></script>
